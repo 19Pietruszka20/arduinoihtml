@@ -1,0 +1,106 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%% IT Project Report template, v0.2
+%% 
+%% INSTRUCTIONS FOR COMPILING THIS DOCUMENT (using GNU/Linux command line)
+%% 
+%% pdflatex it-report.tex; bibtex it-report.aux
+%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[oneside,a4paper,11pt]{report}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{it-report-preamble.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+% Use Roman numerals (i, ii, iii, etc.) for page numbers.
+\pagenumbering{roman}
+
+\input{it-report-frontmatter.tex}
+
+% Use Arabic numerals (1, 2, 3, etc.) for page numbers.
+\pagenumbering{arabic}
+
+
+
+
+\chapter{Introduction}
+
+%\lipsum[1] Logo uczelni pokazane jest na Fig. \ref{fig:logo}.
+
+\input{wprowadzenie.tex}
+
+%\cite{wikipedia}.
+
+Odnosnik \cite{wikipedia}.
+
+%\begin{figure}
+%	\centering
+%	\includegraphics[width=1.7in]{polsl_logo2_zn_en.pdf}
+%	\caption{To jest logo.\label{fig:logo}}
+%\end{figure}
+	
+%\lipsum[3-7] 
+
+
+\chapter{Aim and scope of the project}
+\input{aim.tex}
+\begin{figure}
+	\centering
+	\includegraphics[width=2.7in]{itzdjecie.jpg}
+	\caption{Goal and idea.\label{fig:Goal and Idea}}
+\end{figure}
+\chapter{Schedule}
+\section{Schedule approved at the beginning}
+\input{schedule.tex}
+\section{Schedule reflecting actual work}
+\input{schedulereal.tex}
+\begin{figure}
+	\centering
+	\includegraphics[width=1.0in]{schedule.png}
+	\caption{Schedule.\label{fig:Schedule}}
+\end{figure}
+\chapter{Software and/or hardware implementation WebPage with charts}
+\section{Defining the problem}
+\input{problem.tex}
+\begin{figure}
+	\centering
+	\includegraphics[width=2.0in]{okreslicproblem.jpeg}
+	\caption{Defining the problem.\label{fig:Defining the problem}}
+\end{figure}
+
+\section{Analysis of possible solutions}
+\input{problemanalysis.tex}
+\section{The proposed solution}
+\input{solution.tex}
+\section{Implementation}
+\input{implementation.tex}
+\section{Problems during project development}
+\input{problemsDPD.tex}
+\chapter{Summary}
+\input{summary.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% BIBLIOGRAPHY.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{Bibliography}
+
+\bibliographystyle{IEEEtran} % IEEE bibliographic/citation style.
+\bibliography{IEEEfull,it-bib}
+
+\end{document}
+
+

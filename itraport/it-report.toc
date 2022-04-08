@@ -1,0 +1,15 @@
+\babel@toc {english}{}
+\babel@toc {english}{}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Aim and scope of the project}{2}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Schedule}{3}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Schedule approved at the beginning}{3}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Schedule reflecting actual work}{3}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Software and/or hardware implementation WebPage with charts}{4}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Defining the problem}{4}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Analysis of possible solutions}{5}{section.4.2}%
+\contentsline {section}{\numberline {4.3}The proposed solution}{5}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Implementation}{5}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Problems during project development}{8}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Summary}{10}{chapter.5}%
+\contentsline {chapter}{Bibliography}{14}{section*.13}%

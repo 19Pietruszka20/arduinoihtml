@@ -1,0 +1,75 @@
+Arduino Implementation:\newline
+Initialize the Ethernet server library with port:\newline
+EthernetServer server(80);\newline
+How to set up IP address for my controller:\newline
+IPAddress ip(192, 168, 0, 137);\newline
+Start the Ethernet connection and the server:\newline
+Ethernet.begin(mac, ip);\newline
+Listen for incoming clients:\newline
+EthernetClient client=server.available();\newline
+\newline
+\newline
+We check connection with:\newline
+if(client.connected())\newline
+And then arduino sends request to a server with:\newline
+client.print("GET /testcode/rower.php?v2=");\newline
+client.print(v2);\newline
+client.print("ANDprzebytadroga=");\newline %and&
+client.print(przebytadroga);\newline
+Standard http response header\newline
+client.print(" ");\newline
+client.print("HTTP/1.1");\newline
+client.println();\newline
+client.println("Connection: close");\newline
+client.println();\newline
+\newline
+\newline
+Html Implementation:\newline
+Standard code need:\newline
+<html></html>\newline
+<body></body>\newline
+<head></head>\newline
+<!DOCTYPE HTML>\newline
+<html lang="pl">\newline
+<meta charset="utf-8"/>\newline
+\newline
+Css Implementation:\newline
+We can add background by:\newline
+body\newline
+nawiasklamrowy\newline
+	background-image:url('rower.jpg');\newline
+	background-size:cover;\newline
+	background-position:center;\newline
+	position:relative;\newline
+	overflow:hidden;\newline
+nawiasklamrowy\newline
+\newline
+We should add Id by hashtag or class by dot. Then in id or class we should write width, height, color, text-allign, padding, background-color, font-size and other stuff. For example:\newline
+hashtagwstep\newline
+nawiasklamrowy\newline
+	background-color:black;\newline
+	color:black;\newline
+	text-align:center;\newline
+	padding: 15px;\newline
+	letter-spacing: 2px;\newline
+nawiasklamrowy\newline
+\newline
+The float command is usefull. The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it. \newline
+Also to clear float command we need to use clear:both.\newline
+Creating charts:\newline
+You need to create a php file that will connect to the database and retrieve data using:\newline
+mysqli = new mysqli(DBHOST, DBUSERNAME, DBPASSWORD, DBNAME); with dollar at the beginning of course\newline
+query = sprintf("SELECT v2, przebytadroga FROM rower"); with dollar at the beginning of course\newline
+\newline
+\newline
+Also we need to create a javascript files. In it, the push() method adds more points to the array. Using the get method we download the php url file.
+To create a chart, we need to create an instance of the Chart class with:\newline
+<canvas id = "mycanvas" width = "400" height = "400"> </canvas>\newline
+var ctx =  ("mycanvas");with dollar after equal symbol of course and hashtag before mycanvas\newline
+
+
+We need to create an html file in which we need to include the appropriate files from javascript:\newline
+<script type="text/javascript" src="js/jquery.min.js"></script>\newline
+<script type="text/javascript" src="js/Chart.min.js"></script>\newline
+<script type="text/javascript" src="js/app1.js"></script>\newline
+\newline
