@@ -1,0 +1,132 @@
+body
+{
+		background-image:url('rower.jpg');
+	background-size:cover;
+	background-position:center;
+	position:relative;
+	overflow:hidden;
+}
+#container
+{
+	width:1540px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#menu
+{
+	background-color: #303030;
+	margin-top:20px;
+	color:#ffffff;
+	padding: 10px;
+}
+
+#wstep
+{
+	/*background-color:black;*/
+	color:#ffffff;
+	text-align:center;
+	padding: 15px;
+	letter-spacing: 2px;
+}	
+#Info
+{
+	float:left;
+	background-color:#303030;
+	color:#ffffff;
+	width:120px;
+	min-height:720px;
+	padding: 10px;
+}	
+#Wykresy
+{
+	float:left;
+	padding: 20px;
+	width:1500px;
+	height: auto;
+}	
+
+#footer
+{
+	clear:both;
+	background-color:#303030;
+	color:white;
+	text-align:center;
+	padding: 20px;
+}	
+
+.option
+{
+	float: left;
+	min-width: 270px;
+	height: 25px;
+	font-size:20px;
+	padding: 15px;
+	border-right: 2px solid #444444;
+	border-bottom: 2px solid #444444;
+	border-left: 2px solid #444444;
+	border-top: 2px solid #444444;
+}
+
+.option:hover
+{
+	background-color:#000000;
+	color:white;
+	cursor:pointer;
+}
+
+a.tilelink
+{
+	color:#ffffff;
+	text-decoration:none;
+	display:block;
+	min-width: 270px;
+	height: 25px;
+}
+
+
+.facebook
+{
+	float: left;
+	margin:10px;
+	width:250px;
+	height:150px;
+	background-color: #4668b3;
+}
+
+
+.yt
+{
+	float: left;
+	margin:10px;
+	width:250px;
+	height:150px;
+	background-color: #d94348;
+}
+
+.twitch
+{
+	float: left;
+	margin:10px;
+	width:250px;
+	height:150px;
+	background-color: #6441a5;
+}
+
+.twitter
+{
+	float: left;
+	margin:10px;
+	width:250px;
+	height:150px;
+	background-color: #3095d3;
+}
+
+.con
+{
+	font-size:50px;
+	margin:10px;
+	width:1520px;
+	height:550px;
+	background-color: #303030;
+	color: #ffffff;
+}
